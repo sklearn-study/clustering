@@ -1,3 +1,15 @@
-#sklearn.cluster.Kmeans
+#sklearn.cluster.KMeans
 #by muzhen
+
+'''
+choose k(number of clusters) and distance function
+
+algorithm:
+initialize k centroids by ranodm sampling k samples in full samples
+for sample in full samples:
+    calculate the distance between sample and each centroids by using distance function,\
+    select the centroids which has the least distance with the sample and use its cluster as the sample's cluster
+update the k centroids by using the mean of all corresponding samples
+for and update again and again until any sample's cluster is not change or the loop count up to the appointed number.
+'''
 
