@@ -4,7 +4,7 @@
 '''
 choose k(number of clusters) and distance function
 
-algorithm:
+Algorithm:
 initialize k centroids by ranodm sampling k samples in full samples
 for sample in full samples:
     calculate the distance between sample and each centroids by using distance function,\
@@ -13,3 +13,11 @@ update the k centroids by using the mean of all corresponding samples
 for and update again and again until any sample's cluster is not change or the loop count up to the appointed number.
 '''
 
+
+
+'''
+Tips:
+1,how to determine k?
+2,how to choose distance function?
+3,how to evaluate the effect of clustering?
+'''
