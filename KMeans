@@ -5,7 +5,7 @@
 choose k(number of clusters) and distance function
 
 Algorithm:
-initialize k centroids by ranodm sampling k samples in full samples
+initialize k centroids
 for sample in full samples:
     calculate the distance between sample and each centroids by using distance function,\
     select the centroids which has the least distance with the sample and use its cluster as the sample's cluster
@@ -13,7 +13,21 @@ update the k centroids by using the mean of all corresponding samples
 for and update again and again until any sample's cluster is not change or the loop count up to the appointed number.
 '''
 
+from sklearn.cluster import KMeans
 
+KMeans(self, n_clusters=8, init='k-means++', n_init=10, max_iter=300, tol=0.0001, precompute_distances='auto',\
+       verbose=0, random_state=None, copy_x=True, n_jobs=1, algorithm='auto')
+       
+Attributes
+----------
+cluster_centers_ : array, [n_clusters, n_features]
+    Coordinates of cluster centers
+
+labels_ :
+    Labels of each point
+
+inertia_ : float
+    Sum of distances of samples to their closest cluster center.
 
 '''
 Tips:
